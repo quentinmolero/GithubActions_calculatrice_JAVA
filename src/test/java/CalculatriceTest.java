@@ -35,4 +35,9 @@ public class CalculatriceTest extends TestCase{
         List<Double> tab = new ArrayList<>(){{add(1.0); add(2.0); add(3.0);}};
         assertEquals(Calculatrice.avg(tab), 2.0);
     }
+
+    @Test(expected = ArithmeticException.class)
+    public void testDivByZero() {
+        Calculatrice.div(4, 0);
+    }
 }
