@@ -41,3 +41,6 @@ public class CalculatriceTest extends TestCase{
         Calculatrice.div(4, 0);
     }
 }
+
+
+
