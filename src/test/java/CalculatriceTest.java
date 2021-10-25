@@ -11,6 +11,7 @@ public class CalculatriceTest extends TestCase{
         assertEquals(Calculatrice.add(1, 2), 3.0);
         assertEquals(Calculatrice.add(-10, 5), -5.0);
         assertEquals(Calculatrice.add(10, -5), 5.0);
+        assertEquals(Calculatrice.add(0, 0), 0.0);
     }
     @Test
     public void testSub() {
